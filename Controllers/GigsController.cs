@@ -28,6 +28,7 @@ namespace Gighub.Controllers
         [Authorize]
         [HttpPost]
         [ValidateAntiForgeryToken]
+
         public ActionResult Create(GigFormViewModel viewModel)
         {
             //Si se tiene errores, que se cargue nuevamente pero con los datos que había completado en el formulario
